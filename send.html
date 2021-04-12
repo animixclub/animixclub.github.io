@@ -1,0 +1,1034 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animix Club</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+      integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA=="
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="/css/Animix.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <style>
+     
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav-list {
+  width: 70%;
+  font-family: system-ui;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav-list li {
+  list-style: none;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.nav-list li:hover {
+  transform: scale(1.2);
+  color: #e8ea67;
+}
+.nav-list li a:visited {
+  color: inherit;
+}
+
+.Site-Name {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.nav-list li a {
+  text-decoration: none;
+}
+.nav-list li a:-webkit-any() {
+  color: coral;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: aliceblue;
+  width: 100%;
+  height: 3em;
+  /* position: sticky; */
+  top: 0;
+}
+.logo img {
+  width: 39px;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin: 30px;
+  margin-top: 31px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Background {
+  background-color: #272833;
+  /* background-image: url(../img/tim-oun-6SBOD4ZWPjc-unsplash.jpg); */
+  background-image: url(img/WhatsApp\ Image\ 2021-04-04\ at\ 13.50.55.jpeg);
+  background-size: cover;
+  background-blend-mode: hard-light;
+}
+.Box-main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: auto;
+  max-width: 50%;
+  height: 80%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.First-Section {
+  height: 100vh;
+}
+.first-half {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.second-half {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+}
+.second-half img {
+  width: 72%;
+  border: 2px solid #e8ea67;
+  border-radius: 66px;
+  display: block;
+  margin: auto;
+}
+.Textbig {
+  font-size: 1.5em;
+  font-family: cursive;
+  font-style: initial;
+  font-weight: lighter;
+}
+.Textsmall {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: normal;
+  padding: 9px;
+}
+.Watch-Video-btn {
+  border: 2px solid white;
+  color: white;
+  background: none;
+  padding: 8px 20px;
+  margin: 7px 3px;
+  border-radius: 20px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 17px;
+  cursor: pointer;
+}
+.Watch-Video-btn:hover {
+  transform: scale(1.05);
+  transition: all 0.2s linear;
+  color: coral;
+}
+.About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/xps-kLfkVa_4aXM-unsplash.jpg);
+
+  height: 100vh;
+  background-size: cover;
+}
+.BG {
+  width: 100%;
+  height: 100vh;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 20px;
+
+  transition: transform 1s ease, opacity 1s ease;
+  background: rgba(23, 24, 32, 0.95);
+
+  opacity: 1;
+  position: absolute;
+  color: white;
+  border: 4px solid #e4637a;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.About-Text {
+  padding: 25px;
+  margin: auto;
+}
+#About-Animix {
+  font-size: 30px;
+  color: antiquewhite;
+}
+.Animation {
+  background-image: url(img/Animation.jpg);
+}
+.Skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  background-size: cover;
+}
+.Animation-info {
+  height: 100vh;
+  color: white;
+  transition: transform 1s ease, opacity 1s ease;
+  background: rgba(23, 24, 32, 0.95);
+  border: 4px solid blue;
+  border-top: 0;
+  border-bottom: 0;
+  opacity: 1;
+  position: absolute;
+  margin-inline-start: 60%;
+  width: 39%;
+  height: 100%;
+}
+.Skills-info {
+  height: 100vh;
+  color: white;
+  transition: transform 1s ease, opacity 1s ease;
+  background: rgba(23, 24, 32, 0.95);
+
+  border-top: 0;
+  border-bottom: 0;
+  opacity: 1;
+  position: absolute;
+  margin-inline-end: 60%;
+  width: 39%;
+  height: 100%;
+}
+
+.Skills-Text {
+  margin: auto;
+  padding: 30px;
+}
+.Skills-top {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 7px;
+  padding: 10px;
+}
+.Read-more {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+  background: transparent;
+  border: 2px solid whitesmoke;
+  color: white;
+  padding: 3px 5px;
+}
+.Graphic-Designing {
+  background-image: url(img/Graphic-Designng.jpg);
+}
+.Graphic {
+  border: 4px solid rgb(209, 16, 235);
+  border-top: 0;
+  border-bottom: 0;
+}
+.Game-Development {
+  background-image: url(img/Game-Development.jpg);
+}
+
+.Game {
+  border: 4px solid rgb(16, 235, 115);
+  border-top: 0;
+  border-bottom: 0;
+  margin-inline-start: 120%;
+}
+.ARVR-Designing {
+  background-image: url(img/AR-VR.jpg);
+}
+
+.ARVR {
+  border: 4px solid rgb(216, 253, 48);
+  border-top: 0;
+  border-bottom: 0;
+}
+.team {
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #161623;
+  /* margin: 0 100px; */
+  color: white;
+  position: relative;
+}
+.team::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(20% at 10% 10%);
+}
+.team::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f00, #f0f);
+  clip-path: circle(30% at Right 70%);
+}
+.Heading-Team {
+  line-height: 1.2em;
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+  z-index: 1;
+}
+.Main-Team {
+  margin: 0px 70px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tiles {
+  height: 185vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aquamarine; */
+}
+.Each-row {
+  /* display: flex; */
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+
+  /* flex-direction: column; */
+  align-items: center;
+  height: 47%;
+  width: 100%;
+}
+
+.Each-Member {
+  position: relative;
+  overflow: hidden;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  height: 90%;
+  margin: 8px;
+  width: 23%;
+  transition: all 0.25s linear;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+
+  backdrop-filter: blur(10px);
+}
+
+.info-card {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Each-Member:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 1px 4px 2px 2px rgb(76, 73, 80);
+  opacity: 1;
+}
+.imgbox {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+}
+.imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Mem-Inf h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+.Mem-Inf p {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+  text-align: center;
+  margin: 0 2px;
+}
+.sci {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+}
+.sci li {
+  list-style: none;
+  margin: 1px 7px;
+}
+
+.sci li a {
+  color: #fff;
+  font-size: 18px;
+}
+.Each-img {
+  width: 100%;
+  height: 100%;
+  /* height: initial; */
+  overflow: hidden;
+}
+
+.Contact {
+  background-color: #242943;
+  /* background-color: #E44C65; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.Contct-Main {
+  margin: auto;
+  display: flex;
+  color: antiquewhite;
+  overflow: hidden;
+}
+.Left {
+  width: 100vh;
+  border: 2px solid darkgrey;
+  border-bottom: 0px;
+  height: 100vh;
+}
+
+.Right {
+  width: 100vh;
+  height: 100vh;
+}
+.Every-Block {
+  padding: 10px;
+  margin: auto;
+  height: 33vh;
+  border: 2px solid darkgrey;
+  border-bottom: 0;
+}
+.block-headings {
+  font-size: 34px;
+  margin: 35px;
+  padding: 4px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.block-text {
+  margin: auto;
+  text-align: center;
+}
+#email-link {
+  margin: auto;
+  text-align: center;
+}
+.form {
+  /* background-color: aqua; */
+  width: 100vh;
+  height: 100vh;
+  overflow: hidden;
+
+  margin: auto;
+}
+.Contact-Heading {
+  text-align: center;
+  margin: 0 47px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+}
+.name {
+  margin: 34px;
+  /* display: inline; */
+  padding: 32px;
+  font-size: 20px;
+  border: 1px solid darkgray;
+  border-radius: 0px;
+}
+#Message-Box {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  /* padding: 39px; */
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#name {
+  background-color: #2a2f4a;
+  margin-left: 8px;
+  padding: 11px;
+  border: 1px solid darkgray;
+  color: aliceblue;
+}
+#email {
+  background-color: #2a2f4a;
+  border: 1px solid darkgray;
+  margin-left: 8px;
+  padding: 11px;
+}
+#Message {
+  background-color: #2a2f4a;
+  margin-left: 10px;
+  padding: 0 70px;
+}
+#name:hover {
+  cursor: pointer;
+}
+#email:hover {
+  cursor: pointer;
+}
+#Message:hover {
+  cursor: pointer;
+}
+
+#Email-Div {
+  margin-left: 32px;
+  padding: 10px;
+}
+.Submit {
+  margin: auto;
+  padding: 5px 20px;
+  border: 1px;
+  color: #2a2f4a;
+  font-size: 19px;
+}
+.reset {
+  padding: 5px 20px;
+  border: 1px solid darkgray;
+  background: transparent;
+  color: aliceblue;
+  font-size: 19px;
+}
+.Submit-Btn {
+  margin-left: 40%;
+}
+.Submit:hover {
+  cursor: pointer;
+}
+.reset {
+  cursor: pointer;
+}
+#footer {
+  /* background-color: #e44c65; */
+  padding: 54px 6em;
+  background-color: #de1815;
+
+  color: aliceblue;
+  font-size: 17px;
+  border: 4px solid #f2f1f0;
+}
+.footer-Text {
+  text-align: center;
+}
+.Social-Links {
+  padding: 11px;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 30px;
+  margin: 17px;
+}
+footer div a {
+  padding: 21px 4px;
+  height: 100%;
+  width: 100px;
+  background-color: wheat;
+  text-align: center;
+  margin-left: 43px;
+  border-radius: 50px;
+  box-shadow: 1px 4px 2px 2px rgb(76, 73, 80);
+}
+footer div a i {
+  font-size: 30px;
+  transition: all 0.25s linear;
+}
+i:hover {
+  transform: scale(1.4);
+}
+.fa-facebook-f {
+  color: skyblue;
+}
+.fa-instagram {
+  color: rgb(219, 125, 140);
+}
+.fa-linkedin-in {
+  color: rgb(69, 69, 214);
+}
+.fa-github {
+  color: yellow;
+}
+.fa-youtube {
+  color: red;
+}
+
+.FooterPara {
+  margin: 20px;
+  padding: 8x;
+  padding-top: 22px;
+}
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar Background">
+      <div class="logo">
+        <img
+          id="Logo-Image"
+          src="img/Animix Club 20210324_215404.jpg"
+          alt="logo"
+        />
+        <h3 class="Site-Name">Animix Club</h3>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Our-team">Our-Team</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="Background First-Section" id="Home">
+      <div class="Box-main">
+        <div class="first-half">
+          <p class="Textbig">
+            Wanna Learn Animation ,Grapghic Designing, AR-VR etc Cool Stuff Join
+            Animix Club!!!
+          </p>
+          <p class="Textsmall">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+            quaerat modi laboriosam non, dolor error illo debitis quibusdam
+            eligendi molestiae!
+          </p>
+          <button class="Watch-Video-btn">Watch Video</button>
+        </div>
+        <div class="second-half">
+          <img src="img/Animix Club 20210324_215404.jpg" alt="Image" />
+        </div>
+      </div>
+    </section>
+    <section class="About BG" id="About">
+      <div class="info">
+        <div class="Firstcol">
+          <h3 id="About-Animix">About Animix Club:</h3>
+          <p class="About-Text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus, sit? Omnis esse sequi laudantium iusto et ad eligendi
+            dicta cupiditate rerum officia! Quod ipsum error perspiciatis natus
+            blanditiis obcaecati molestias quas, quae earum similique sit
+            assumenda reiciendis pariatur possimus excepturi incidunt eaque nisi
+            voluptatum quam officiis deleniti? Iusto, fugit voluptatibus?
+          </p>
+        </div>
+        <div class="Secondcol">
+          <p class="About-Text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque,
+            consequatur veniam! Excepturi error numquam deleniti. Nesciunt
+            corrupti fugiat animi consequuntur sint laudantium voluptates
+            sapiente quibusdam debitis, harum repellendus aut itaque voluptatum
+            tempora similique dolorum ab perspiciatis maxime mollitia culpa
+            voluptatibus? Porro minima omnis fugiat accusamus expedita eum,
+            excepturi repellat rem?
+          </p>
+        </div>
+        <div class="ThirdCol">
+          <p class="About-Text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+            magni maiores aspernatur vero, culpa officiis amet quibusdam impedit
+            alias odit cupiditate velit voluptatibus? Recusandae unde dolor,
+            modi et rerum aperiam a, hic veritatis dolorum, tenetur pariatur
+            officiis necessitatibus beatae blanditiis ullam odio? Dolorem quia
+            repellendus doloremque deleniti ipsum ipsam fuga?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="Skills Animation">
+      <div class="Animation-info">
+        <h3 class="Skills-top">Animation And 3D-Modeling</h3>
+        <p class="Skills-Text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+          accusantium ipsum fuga nobis molestiae beatae omnis animi. Voluptatem
+          vel nobis perferendis recusandae qui ipsa. Magni eaque, optio nulla
+          exercitationem explicabo distinctio deleniti saepe est doloremque
+          quisquam aliquam. Dolore nemo deleniti consequatur tenetur possimus,
+          aspernatur nobis velit, ipsa quam facilis quis! Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Molestias in sit natus facilis,
+          provident, iusto quasi dolores sint pariatur modi corporis sapiente
+          minima reprehenderit? Architecto aliquid nobis officia aperiam.
+        </p>
+        <p class="Skills-Text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+          accusantium ipsum fuga nobis molestiae beatae omnis animi. Voluptatem
+          vel nobis perferendis recusandae qui ipsa. Magni eaque, optio nulla
+          exercitationem explicabo distinctio deleniti saepe est doloremque
+          quisquam aliquam. Dolore nemo deleniti consequatur tenetur possimus,
+          aspernatur nobis velit, ipsa quam facilis quis! Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Molestias in sit natus facilis,
+          provident, iusto quasi dolores sint pariatur modi corporis sapiente
+          minima reprehenderit? Architecto aliquid nobis officia aperiam.
+        </p>
+        <button class="Read-more">Read More</button>
+      </div>
+    </section>
+    <section class="Skills Graphic-Designing">
+      <div class="Skills-info Graphic">
+        <h3 class="Skills-top">Graphic-Designing</h3>
+        <p class="Skills-Text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+          accusantium ipsum fuga nobis molestiae beatae omnis animi. Voluptatem
+          vel nobis perferendis recusandae qui ipsa. Magni eaque, optio nulla
+          exercitationem explicabo distinctio deleniti saepe est doloremque
+          quisquam aliquam. Dolore nemo deleniti consequatur tenetur possimus,
+          aspernatur nobis velit, ipsa quam facilis quis! Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Molestias in sit natus facilis,
+          provident, iusto quasi dolores sint pariatur modi corporis sapiente
+          minima reprehenderit? Architecto aliquid nobis officia aperiam.
+        </p>
+        <p class="Skills-Text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+          accusantium ipsum fuga nobis molestiae beatae omnis animi. Voluptatem
+          vel nobis perferendis recusandae qui ipsa. Magni eaque, optio nulla
+          exercitationem explicabo distinctio deleniti saepe est doloremque
+          quisquam aliquam. Dolore nemo deleniti consequatur tenetur possimus,
+          aspernatur nobis velit, ipsa quam facilis quis! Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Molestias in sit natus facilis,
+          provident, iusto quasi dolores sint pariatur modi corporis sapiente
+          minima reprehenderit? Architecto aliquid nobis officia aperiam.
+        </p>
+        <button class="Read-more">Read More</button>
+      </div>
+    </section>
+    <section class="Skills Game-Development">
+      <div class="Skills-info Game">
+        <h3 class="Skills-top">Game Development</h3>
+        <p class="Skills-Text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+          accusantium ipsum fuga nobis molestiae beatae omnis animi. Voluptatem
+          vel nobis perferendis recusandae qui ipsa. Magni eaque, optio nulla
+          exercitationem explicabo distinctio deleniti saepe est doloremque
+          quisquam aliquam. Dolore nemo deleniti consequatur tenetur possimus,
+          aspernatur nobis velit, ipsa quam facilis quis! Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Molestias in sit natus facilis,
+          provident, iusto quasi dolores sint pariatur modi corporis sapiente
+          minima reprehenderit? Architecto aliquid nobis officia aperiam.
+        </p>
+        <p class="Skills-Text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+          accusantium ipsum fuga nobis molestiae beatae omnis animi. Voluptatem
+          vel nobis perferendis recusandae qui ipsa. Magni eaque, optio nulla
+          exercitationem explicabo distinctio deleniti saepe est doloremque
+          quisquam aliquam. Dolore nemo deleniti consequatur tenetur possimus,
+          aspernatur nobis velit, ipsa quam facilis quis! Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Molestias in sit natus facilis,
+          provident, iusto quasi dolores sint pariatur modi corporis sapiente
+          minima reprehenderit? Architecto aliquid nobis officia aperiam.
+        </p>
+        <button class="Read-more">Read More</button>
+      </div>
+    </section>
+    <section class="Skills ARVR-Designing">
+      <div class="Skills-info ARVR">
+        <h3 class="Skills-top">AR-VR Development</h3>
+        <p class="Skills-Text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+          accusantium ipsum fuga nobis molestiae beatae omnis animi. Voluptatem
+          vel nobis perferendis recusandae qui ipsa. Magni eaque, optio nulla
+          exercitationem explicabo distinctio deleniti saepe est doloremque
+          quisquam aliquam. Dolore nemo deleniti consequatur tenetur possimus,
+          aspernatur nobis velit, ipsa quam facilis quis! Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Molestias in sit natus facilis,
+          provident, iusto quasi dolores sint pariatur modi corporis sapiente
+          minima reprehenderit? Architecto aliquid nobis officia aperiam.
+        </p>
+        <p class="Skills-Text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+          accusantium ipsum fuga nobis molestiae beatae omnis animi. Voluptatem
+          vel nobis perferendis recusandae qui ipsa. Magni eaque, optio nulla
+          exercitationem explicabo distinctio deleniti saepe est doloremque
+          quisquam aliquam. Dolore nemo deleniti consequatur tenetur possimus,
+          aspernatur nobis velit, ipsa quam facilis quis! Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Molestias in sit natus facilis,
+          provident, iusto quasi dolores sint pariatur modi corporis sapiente
+          minima reprehenderit? Architecto aliquid nobis officia aperiam.
+        </p>
+        <button class="Read-more">Read More</button>
+      </div>
+    </section>
+    <section class="team" id="Our-team">
+      <div class="Main-Team">
+        <div class="Heading-Team">
+          <h3 class="Team-head"><i class="fas fa-users"></i>Meet The Team</h3>
+          <p class="Team-Text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat
+            magni distinctio saepe quod sequi porro in mollitia non. Asperiores!
+          </p>
+        </div>
+        <div class="tiles">
+          <div class="row1 Each-row">
+            <span class="Each-Member mem1">
+              <div class="info-card">
+                <div class="imgbox">
+                  <img
+                    src="img/Mitesh Tank.JPG"
+                    alt="Mitesh"
+                    class="Each-img"
+                  />
+                </div>
+                     <div class="Mem-Inf">
+                <h3>Mitesh Tank</h3>
+                <p >I am Mitesh. Front-end web developer</p>
+                  </div>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#">
+                    <i class="fab fa-facebook-f "  ></i>
+                  </a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul> </span
+            ><span class="Each-Member mem2">
+              <div class="info-card">
+                <div class="imgbox">
+                  <img
+                    src="img/Animation.jpg"
+                    alt="Niranjan"
+                    class="Each-img"
+                  />
+                </div>
+                <div class="Mem-Inf">
+                  <h3 class=>Niranjan Girhe</h3>
+                  <p>
+                    I am Niranjan Girhe.Game developer and Animation Creator
+                  </p>
+                  </div>
+              </div>
+              
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul> 
+            </span>
+            <span class="Each-Member mem3">
+              <div class="info-card">
+                <div class="imgbox">
+                  <img
+                    src="img/Animix Club 20210324_215404.jpg"
+                    alt="Pratik"
+                    class="Each-img"
+                  />
+                 </div> 
+                  <div class="Mem-Inf"> 
+                <h3>Pratik kale</h3>
+                <p>I am Pratik. Graphic-designer</p>
+              </div>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </span>
+          </div>
+
+          <div class="row2 Each-row">
+            <span class="Each-Member"></span><span class="Each-Member"></span
+            ><span class="Each-Member"></span><span class="Each-Member"></span>
+          </div>
+
+          <div class="row3 Each-row">
+            <span class="Each-Member"></span><span class="Each-Member"></span
+            ><span class="Each-Member"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Contact" id="Contact">
+      <div class="Contct-Main">
+        <div class="Left">
+          <h2 class="Contact-Heading">Contact Us</h2>
+          <form action="" method="POST" class="form">
+            <div class="fields">
+              <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="name" id="Email-Div">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="name" id="Message-Box">
+                <label for="Massege">Message: </label>
+                <textarea
+                  name="Message"
+                  id="Message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+            <div class="Submit-Btn">
+              <button class="Submit">Submit</button>
+              <button class="reset">Clear</button>
+            </div>
+          </form>
+        </div>
+        <div class="Right">
+          <div class="Every-Block">
+            <h3 class="block-headings">
+              <i class="fas fa-envelope-square"></i>
+              Email
+            </h3>
+            <a href="#" class="block-text" id="email-link"
+              >animix.mitaoe.ac.in</a
+            >
+          </div>
+
+          <div class="Every-Block">
+            <h3 class="block-headings">
+              <i class="fas fa-map-marker-alt"></i>
+              Address
+            </h3>
+            <p class="block-text">
+              MIT Acandemy of Engineering Alandi,Pune-302222
+            </p>
+          </div>
+          <div class="Every-Block">
+            <h3 class="block-headings">
+              <i class="fas fa-phone"></i>
+              Phone
+            </h3>
+            <p class="block-text">36905513353544203</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="Social-Links">
+        <a href="#" target="_blank" class="Social">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" target="_blank" class="Social">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" target="_blank" class="Social">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" target="_blank" class="Social">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" target="_blank" class="Social">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      <div class="FooterPara">
+        <p class="footer-Text">
+          Copyright 2021 | www.Animixclubmitaoe.com ALL RIGHTS RESERVED
+        </p>
+
+        <p class="footer-Text">Images credit | Unsplash</p>
+      </div>
+    </footer>
+  </body>
+</html>
